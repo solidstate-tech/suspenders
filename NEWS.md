@@ -1,3 +1,5 @@
+* Changed: replace `heroku join` calls with `heroku apps:info` in `bin/setup`
+
 1.50.0 (December 28, 2018)
 
 * Removed: jquery-rails.
