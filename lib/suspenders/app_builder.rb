@@ -104,10 +104,6 @@ module Suspenders
       configure_environment "production", config
     end
 
-    def enable_rack_deflater
-      configure_environment "production", "config.middleware.use Rack::Deflater"
-    end
-
     def setup_asset_host
       replace_in_file 'config/environments/production.rb',
         "# config.action_controller.asset_host = 'http://assets.example.com'",
